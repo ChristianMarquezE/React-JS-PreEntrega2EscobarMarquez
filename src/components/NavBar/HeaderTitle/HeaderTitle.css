@@ -1,0 +1,28 @@
+.header-title {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente, si es necesario */
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease, top 0.3s ease;
+    padding-top: 2vh;
+  }
+  .header-title img {
+    max-width: 20%; /* Asegúrate de que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+
+  .header-main:hover .header-title {
+    opacity: 1;
+    top: -10px;
+  }
+
+  .header-main.header-hover .header-title {
+    opacity: 1; /* Asegúrate de que el título sea visible */
+    top: 10px; /* Asegúrate de que esté en la posición correcta */
+  }

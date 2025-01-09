@@ -1,0 +1,21 @@
+.colecciones-content {
+    display: none; /* Ocultar por defecto */
+    flex-direction: column; /* Asegura que los elementos se alineen en columna */
+    margin-top: 0.5rem; /* Espaciado superior para separar del enlace principal */
+  }
+  
+  .colecciones:hover .colecciones-content {
+    display: block; /* Mostrar al pasar el mouse */
+  }
+  
+  /* Estilos para los enlaces dentro de colecciones */
+  .colecciones-content li{
+    display: block; /* Cada enlace ocupa una línea completa */
+    padding: 0.3rem 0rem; /* Espaciado alrededor de cada enlace */
+    text-decoration: none; /* Sin subrayado */
+    color: var(--text-color); /* Color del texto */
+  }
+  
+  .colecciones-content a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Color de fondo al pasar el mouse */
+  }
