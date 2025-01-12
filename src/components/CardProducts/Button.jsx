@@ -1,21 +1,12 @@
-import { useState } from "react";
+import React from 'react';
+import './Button.css';
 
-export default function Button(props) {
-  const { color, disabled, children } = props;
-
-  const [isDisabled, setIsDisabled] = useState(disabled);
-  const [colorState, setColorState] = useState(color);
-
+function Button(props) {
   return (
-    <button
-      onClick={() => {
-        setColorState("orange");
-        setIsDisabled("true");
-      }}
-      style={{ backgroundColor: colorState }}
-      disabled={isDisabled}
-    >
-      {children}
+    <button className="button" onClick={props.onClick}>
+      {props.children}
     </button>
   );
 }
+
+export default Button;

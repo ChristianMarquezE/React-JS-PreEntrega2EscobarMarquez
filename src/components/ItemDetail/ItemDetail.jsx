@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
-import ItemCount from "./ItemCount";
-import "../../index.css"
+import { Link } from 'react-router-dom';
+import ItemCount from './ItemCount';
+import '../../index.css';
 import './ItemDetail.css';
 
 function ItemDetail(props) {
-  const { price, title, description, text, img, stock } = props;
+  const { price, title, coleccion, img, stock } = props;
 
   function onSubmitCount(count) {
     console.log(`Agregaste ${count} unidades al carrito`);
@@ -16,9 +16,9 @@ function ItemDetail(props) {
         <img className="item-detail-image" src={img} alt="product img" />
         <div className="item-detail-info">
           <h3 className="item-detail-title">{title}</h3>
-          <p className="item-detail-text">{text}</p>
+          <p className="item-detail-text">Stock: {stock}</p>
           <p className="item-detail-price">$ {price}</p>
-          <p className="item-detail-description">{description}</p>
+          <p className="item-detail-description">{coleccion}</p>
         </div>
         <div className="item-count-container">
           <ItemCount onSubmitCount={onSubmitCount} max={stock} />

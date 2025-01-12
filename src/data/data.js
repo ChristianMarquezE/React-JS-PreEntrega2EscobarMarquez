@@ -3,17 +3,19 @@ const products = [
     id: 1,
     title: 'Anillo',
     price: 120,
-    stock: 1,
+    stock: 3,
     img: 'https://josefinaorrego.vercel.app/assets/praia/carrusel-1-copia.JPG',
-    category: 'Praia'
+    coleccion: 'Praia',
+    category: "Joyeria"
   },
   {
     id: 2,
     title: 'Aros',
     price: 100,
-    stock: 1,
+    stock: 2,
     img: 'https://josefinaorrego.vercel.app/assets/praia/carrusel-2-copia.JPG',
-    category: 'Praia'
+    coleccion: 'Praia',
+    category: "Joyeria"
   },
   {
     id: 3,
@@ -21,7 +23,8 @@ const products = [
     price: 200,
     stock: 1,
     img: 'https://josefinaorrego.vercel.app/assets/eclat-celeste/carrusel-1.jpg',
-    category: 'Éclat Céleste'
+    coleccion: 'EclatCeleste',
+    category: "Vestidos"
   },
   {
     id: 4,
@@ -29,7 +32,8 @@ const products = [
     price: 200,
     stock: 1,
     img: 'https://josefinaorrego.vercel.app/assets/resplandor-del-desierto/carrusel-1.jpg',
-    category: 'Resplandor del Desierto'
+    coleccion: 'ResplandorDelDesierto',
+    category: "Vestidos"
   },
   {
     id: 5,
@@ -37,7 +41,8 @@ const products = [
     price: 180,
     stock: 1,
     img: 'https://josefinaorrego.vercel.app/assets/sastro/carrusel-44.jpg',
-    category: 'Sastro'
+    coleccion: 'Sastro',
+    category: "Vestidos"
   },
   {
     id: 6,
@@ -45,7 +50,8 @@ const products = [
     price: 200,
     stock: 1,
     img: 'https://josefinaorrego.vercel.app/assets/retrodutura/carrusel-1.jpg',
-    category: 'Retrofutura'
+    coleccion: 'Retrofutura',
+    category: "Vestidos"
   }
 
 ];

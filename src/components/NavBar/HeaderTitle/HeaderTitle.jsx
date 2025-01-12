@@ -3,7 +3,7 @@ function HeaderTitle (props){
 
 
     return (
-      <div class="header-title">
+      <div className="header-title">
       <img
         src="https://josefinaorrego.vercel.app/assets/jorregoJO.png"
         alt="Logo con cinco letras, JORREGO. Las letras J y O son redondeadas. Las letras R y E son rectangulares. La letra G es redonda."

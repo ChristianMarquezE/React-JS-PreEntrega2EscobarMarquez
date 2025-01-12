@@ -7,19 +7,19 @@ function SocialIcons(props) {
 
   
   return (
-    <div class="social-icons2 montserrat-light">
-      <Link class="contacto-link" to="pages/contacto.html">
+    <div className="social-icons2 montserrat-light">
+      <Link className="contacto-link" to="pages/contacto.html">
         Contacto
       </Link>
       <Link
-        class="instagram-icon"
+        className="instagram-icon"
         to="https://www.instagram.com/jorregodesign/"
         target="_blank"
       >
-        <i class="fab fa-instagram"></i>
+        <i className="fab fa-instagram"></i>
       </Link>
-      <Link class="instagram-icon" to="mailto:jorregor@udd.cl" target="_blank">
-        <i class="fa-regular fa-envelope"></i>
+      <Link className="instagram-icon" to="mailto:jorregor@udd.cl" target="_blank">
+        <i className="fa-regular fa-envelope"></i>
       </Link>
    
       <CartWidget></CartWidget>

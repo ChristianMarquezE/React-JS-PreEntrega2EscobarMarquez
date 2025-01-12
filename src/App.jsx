@@ -24,24 +24,24 @@ function App() {
           <Nav>
             <NavLinks>
               <Li texto="Inicio" to="/"></Li>
-              <Li LiClass="colecciones">
-                <NavLink to="/" ClassName="colecciones-link">
+              <div className="colecciones">
+                <NavLink to="/" className="colecciones-link">
                   Colecciones
                 </NavLink>
                 <MenuPlegable>
-                  <Li texto="Praia" to="/colecciones/praia" />
-                  <Li texto="Éclat Céleste" to="/colecciones/eclat-celeste" />
+                  <Li texto="Praia" to="/coleccion/praia" />
+                  <Li texto="Éclat Céleste" to="/coleccion/eclatceleste" />
                   <Li
                     texto="Resplandor del desierto"
-                    to="/colecciones/resplandor-del-desierto"
+                    to="/coleccion/resplandordeldesierto"
                   />
-                  <Li texto="SastrO" to="/colecciones/sastro" />
-                  <Li texto="Retrofutura" to="/colecciones/retrofutura" />
+                  <Li texto="SastrO" to="/coleccion/sastro" />
+                  <Li texto="Retrofutura" to="/coleccion/retrofutura" />
                   <Li texto="Ver Todo" to="/" />
                 </MenuPlegable>
-              </Li>
-              <Li texto="Joyería" to="/joyeria" />
-              <Li texto="Vestidos" to="/vestidos" />
+              </div>
+              <Li texto="Joyería" to="category/joyeria" />
+              <Li texto="Vestidos" to="category/vestidos" />
             </NavLinks>
           </Nav>
           <SocialIcons/>
@@ -56,6 +56,10 @@ function App() {
           <Route
             path="/category/:catid"
             element={<ItemListContainer greeting="Compras por categoría" />}
+          />
+          <Route
+            path="/coleccion/:colid"
+            element={<ItemListContainer greeting="Compras por colección" />}
           />
           <Route path="/item/:id" element={<ItemDetailContainer />} />
         </Routes>

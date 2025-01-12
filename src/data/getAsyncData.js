@@ -50,6 +50,24 @@ export function getAsyncItemsByCategory(catID) {
   console.log("Promesa generada.")
 
   return promiseData;
+
+  
+}
+export function getAsyncItemsByColeccion(colID) {
+  console.log("Solitando productos para... ", colID)
+  
+  const promiseData = new Promise( (resolve) => {    
+
+    setTimeout( () => {      
+      const requestedProduct = products.filter( (item) => item.coleccion.toLowerCase() === colID.toLowerCase())
+      // TODO: validar si encontramos un producto -> si no es así, rechazamos la promesa
+      resolve(requestedProduct)
+    }, 500)     
+  })
+
+  console.log("Promesa generada.")
+
+  return promiseData;
 }
 
 /* export function getAsyncItemById(requestID) {

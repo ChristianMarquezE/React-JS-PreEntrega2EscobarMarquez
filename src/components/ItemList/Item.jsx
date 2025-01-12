@@ -2,7 +2,7 @@ import Button from '../CardProducts/Button';
 import '../CardProducts/CardProduct.css';
 import { Link, NavLink } from 'react-router-dom';
 function Item(props) {
-  const { price, title, text, img, id} = props;
+  const { price, title, text, img, id } = props;
 
   return (
     <div className="card">
@@ -13,11 +13,10 @@ function Item(props) {
         <div>
           <p className="card-price">$ {price}</p>
         </div>
-       
-      </div>
-      <Link to={`/item/${id}`}>
+        <Link to={`/item/${id}`}>
           <Button>Ver Detalle</Button>
         </Link>
+      </div>
     </div>
   );
 }
