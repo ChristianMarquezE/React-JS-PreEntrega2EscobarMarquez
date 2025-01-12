@@ -23,9 +23,9 @@ function App() {
 
           <Nav>
             <NavLinks>
-              <Li texto="Inicio" to="#"></Li>
+              <Li texto="Inicio" to="/"></Li>
               <Li LiClass="colecciones">
-                <NavLink to="/colecciones" ClassName="colecciones-link">
+                <NavLink to="/" ClassName="colecciones-link">
                   Colecciones
                 </NavLink>
                 <MenuPlegable>
@@ -37,25 +37,27 @@ function App() {
                   />
                   <Li texto="SastrO" to="/colecciones/sastro" />
                   <Li texto="Retrofutura" to="/colecciones/retrofutura" />
-                  <Li texto="Ver Todo" to="/colecciones" />
+                  <Li texto="Ver Todo" to="/" />
                 </MenuPlegable>
               </Li>
-              <Li texto="Joyería" to="/joyeria"/>
-              <Li texto="Vestidos" to="/vestidos"/>
+              <Li texto="Joyería" to="/joyeria" />
+              <Li texto="Vestidos" to="/vestidos" />
             </NavLinks>
           </Nav>
-          <SocialIcons />
+          <SocialIcons/>
         </Header>
         <Routes>
           <Route
             path="/"
             element={
-              <ItemListContainer
-                greeting="Productos de Diseñadora Profesional:"
-                setSelectedProduct={setSelectedProduct}
-              />
+              <ItemListContainer greeting="Productos de Diseñadora Profesional:" />
             }
           />
+          <Route
+            path="/category/:catid"
+            element={<ItemListContainer greeting="Compras por categoría" />}
+          />
+          <Route path="/item/:id" element={<ItemDetailContainer />} />
         </Routes>
       </BrowserRouter>
     </>

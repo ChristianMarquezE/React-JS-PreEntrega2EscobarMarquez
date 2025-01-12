@@ -1,6 +1,6 @@
 import Button from '../CardProducts/Button';
 import '../CardProducts/CardProduct.css';
-
+import { Link, NavLink } from 'react-router-dom';
 function Item(props) {
   const { price, title, text, img, id} = props;
 
@@ -15,7 +15,9 @@ function Item(props) {
         </div>
        
       </div>
-      <a href={`products/${id}`}>Ver Detalles</a>
+      <Link to={`/item/${id}`}>
+          <Button>Ver Detalle</Button>
+        </Link>
     </div>
   );
 }

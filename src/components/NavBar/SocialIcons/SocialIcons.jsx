@@ -1,25 +1,28 @@
 import './SocialIcons.css';
 import "../Nav/Nav.css";
+import { Link, NavLink } from 'react-router-dom';
+import CartWidget from "../../CartWidget/CartWidget"
 function SocialIcons(props) {
 
 
   
   return (
     <div class="social-icons2 montserrat-light">
-      <a class="contacto-link" href="pages/contacto.html">
+      <Link class="contacto-link" to="pages/contacto.html">
         Contacto
-      </a>
-      <a
+      </Link>
+      <Link
         class="instagram-icon"
-        href="https://www.instagram.com/jorregodesign/"
+        to="https://www.instagram.com/jorregodesign/"
         target="_blank"
       >
         <i class="fab fa-instagram"></i>
-      </a>
-      <a class="instagram-icon" href="mailto:jorregor@udd.cl" target="_blank">
+      </Link>
+      <Link class="instagram-icon" to="mailto:jorregor@udd.cl" target="_blank">
         <i class="fa-regular fa-envelope"></i>
-      </a>
-      <a class="instagram-icon" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+      </Link>
+   
+      <CartWidget></CartWidget>
     </div>
   );
 }
