@@ -10,7 +10,7 @@
     font-weight: bold;
     opacity: 0;
     transition: opacity 0.3s ease, top 0.3s ease;
-    padding-top: 2vh;
+    padding-top: 4vh;
   }
   .header-title img {
     max-width: 20%; /* Asegúrate de que la imagen no exceda el ancho del contenedor */

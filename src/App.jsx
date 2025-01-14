@@ -19,8 +19,9 @@ function App() {
     <>
       <BrowserRouter>
         <Header>
-          <HeaderTitle />
-
+          <Link to="/">
+            <HeaderTitle />
+          </Link>
           <Nav>
             <NavLinks>
               <Li texto="Inicio" to="/"></Li>
@@ -44,7 +45,7 @@ function App() {
               <Li texto="Vestidos" to="category/vestidos" />
             </NavLinks>
           </Nav>
-          <SocialIcons/>
+          <SocialIcons />
         </Header>
         <Routes>
           <Route
